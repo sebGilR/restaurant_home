@@ -11,7 +11,7 @@ This is a single page restaurant website that was built to practice the use of w
 - NPM + Webpack
 
 ## Live Demo
-[View Live Demo](https://raw.githack.com/sebGilR/restaurant_home/feature/app/dist/index.html)
+[Visit Live Demo](https://raw.githack.com/sebGilR/restaurant_home/feature/app/dist/index.html)
 
 ## Author
 
