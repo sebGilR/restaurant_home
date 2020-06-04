@@ -15,7 +15,6 @@ body {
   background-size: cover;
   width: 100%;
   color: white;
-  background-color: rgba(0, 0, 0, 0.623);
 }
 
 #content {
@@ -24,7 +23,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.623); 
+  background-color: rgba(0, 0, 0, 0.623);
   display: flex;
   justify-content: center;
 }
@@ -47,7 +46,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    bottom: 0em;
+    bottom: 0;
     display: flex;
     align-items: center;
 
@@ -82,7 +81,6 @@ body {
 }
 
 #home {
-
   p {
     font-size: 1.3em;
     margin-bottom: 30px;
@@ -117,6 +115,7 @@ body {
   font-size: 140%;
   flex-direction: row;
   align-items: center;
+
   ul {
     list-style: none;
     text-align: center;

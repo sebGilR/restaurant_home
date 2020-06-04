@@ -1,24 +1,24 @@
+const content = document.querySelector('#content');
 const body = document.querySelector('body');
 const homeLi = document.createElement('LI');
 const menuLi = document.createElement('LI');
 const reserveLi = document.createElement('LI');
 
 const loadHeader = () => {
-
   const header = document.createElement('HEADER');
   header.setAttribute('id', 'header');
 
   const logo = document.createElement('h1');
-  logo.innerText = "Buggie Snacks";
+  logo.innerText = 'Buggie Snacks';
 
   const nav = document.createElement('NAV');
   const ul = document.createElement('UL');
 
-  homeLi.textContent = "Home";
+  homeLi.textContent = 'Home';
   homeLi.setAttribute('id', 'home');
-  menuLi.textContent = "Menu";
+  menuLi.textContent = 'Menu';
   menuLi.setAttribute('id', 'menu');
-  reserveLi.textContent = "Contact us";
+  reserveLi.textContent = 'Contact us';
   reserveLi.setAttribute('id', 'contact');
 
   const navItems = [homeLi, menuLi, reserveLi];
@@ -31,6 +31,8 @@ const loadHeader = () => {
   header.appendChild(nav);
 
   body.insertBefore(header, content);
-}
+};
 
-export { homeLi, menuLi, reserveLi, loadHeader }
+export {
+  homeLi, menuLi, reserveLi, loadHeader,
+};

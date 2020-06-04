@@ -1,7 +1,8 @@
-const loadMenu = () => {
+const content = document.querySelector('#content');
 
+const loadMenu = () => {
   const nav = document.querySelector('nav > ul');
-  const navLis = nav.childNodes
+  const navLis = nav.childNodes;
   const pageBtn = document.querySelector('#menu');
   for (let i = 0; i < navLis.length; i += 1) {
     navLis[i].classList.remove('active');
@@ -12,21 +13,21 @@ const loadMenu = () => {
   const elements = document.createElement('DIV');
   elements.setAttribute('id', 'menu');
   elements.setAttribute('class', 'elements');
-  let ul = document.createElement('UL');
+  const ul = document.createElement('UL');
 
   const beer = ul.cloneNode(false);
   const beerTitle = document.createElement('H3');
-  beerTitle.innerText = "Beers";
+  beerTitle.innerText = 'Beers';
   beer.appendChild(beerTitle);
 
   const coffee = ul.cloneNode(false);
   const coffeeTitle = document.createElement('H3');
-  coffeeTitle.innerText = "Coffees";
+  coffeeTitle.innerText = 'Coffees';
   coffee.appendChild(coffeeTitle);
 
   const snacks = ul.cloneNode(false);
   const snacksTitle = document.createElement('H3');
-  snacksTitle.innerText = "Snacks";
+  snacksTitle.innerText = 'Snacks';
   snacks.appendChild(snacksTitle);
 
   const menuLists = [snacks, beer, coffee];
@@ -36,26 +37,30 @@ const loadMenu = () => {
   const snackItems = ['Waffle Fries', 'Chicken Nuggets', 'Cheese Burger', 'Tacos'];
 
   beerItems.map(item => {
-    let li = document.createElement('LI');
+    const li = document.createElement('LI');
     li.innerText = item;
     beer.appendChild(li);
+    return true;
   });
   coffeeItems.map(item => {
-    let li = document.createElement('LI');
+    const li = document.createElement('LI');
     li.innerText = item;
     coffee.appendChild(li);
+    return true;
   });
   snackItems.map(item => {
-    let li = document.createElement('LI');
+    const li = document.createElement('LI');
     li.innerText = item;
     snacks.appendChild(li);
+    return true;
   });
 
   menuLists.map(list => {
-    elements.appendChild(list)
+    elements.appendChild(list);
+    return true;
   });
 
-  content.appendChild(elements)
-}
+  content.appendChild(elements);
+};
 
-export { loadMenu }
+export default loadMenu;

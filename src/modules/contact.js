@@ -1,3 +1,5 @@
+const content = document.querySelector('#content');
+
 const loadContact = () => {
   const nav = document.querySelector('nav > ul');
   const navLis = nav.childNodes;
@@ -23,6 +25,6 @@ const loadContact = () => {
                      <p>Call our reservation line:<br>1800-000-000</p>`;
   elements.appendChild(contact);
   content.appendChild(elements);
-}
+};
 
-export { loadContact }
+export default loadContact;
