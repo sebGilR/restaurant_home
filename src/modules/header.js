@@ -15,8 +15,11 @@ const loadHeader = () => {
   const ul = document.createElement('UL');
 
   homeLi.textContent = "Home";
+  homeLi.setAttribute('id', 'home');
   menuLi.textContent = "Menu";
+  menuLi.setAttribute('id', 'menu');
   reserveLi.textContent = "Contact us";
+  reserveLi.setAttribute('id', 'contact');
 
   const navItems = [homeLi, menuLi, reserveLi];
 

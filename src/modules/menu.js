@@ -1,6 +1,17 @@
 const loadMenu = () => {
+
+  const nav = document.querySelector('nav > ul');
+  const navLis = nav.childNodes
+  const pageBtn = document.querySelector('#menu');
+  for (let i = 0; i < navLis.length; i += 1) {
+    navLis[i].classList.remove('active');
+  }
+
+  pageBtn.classList.add('active');
+
   const elements = document.createElement('DIV');
   elements.setAttribute('id', 'menu');
+  elements.setAttribute('class', 'elements');
   let ul = document.createElement('UL');
 
   const beer = ul.cloneNode(false);
