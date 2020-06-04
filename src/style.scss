@@ -1,5 +1,9 @@
-$bg-color: green;
+$bg-color: rgb(63, 63, 63);
 
 body {
+    background: url('./assets/background.jpg');
     background-color: $bg-color;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
 }

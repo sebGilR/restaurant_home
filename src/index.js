@@ -1,4 +1,4 @@
 import './style.scss';
 
 
-alert('webpack\'s ready baby');
+console.log('webpack\'s ready baby');
