@@ -1,6 +1,6 @@
 # Restaurant Page 
 
-This is a single page restaurant website that was built to practice the use of webpack together with loaders. The website elements are loaded dynamically by each of the created JS modules.
+This is a single page restaurant website that was built to practice the use of Webpack together with loaders. The website elements are loaded dynamically by each of the created JS modules.
 
 # Screenshot
 ![screenshot](./screenshot.png)
