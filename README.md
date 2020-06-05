@@ -5,6 +5,10 @@ This is a single page restaurant website that was built to practice the use of W
 # Screenshot
 ![screenshot](./screenshot.png)
 
+## Potential Features
+- Add form to submit reservation orders to an email/DB.
+- View details for each menu item.
+
 ## Built With
 - HTML & CSS
 - JavaScript/ES6
