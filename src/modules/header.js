@@ -27,8 +27,7 @@ const loadHeader = () => {
     ul.appendChild(navItems[i]);
   }
   nav.appendChild(ul);
-  header.appendChild(logo);
-  header.appendChild(nav);
+  header.append(logo, nav);
 
   body.insertBefore(header, content);
 };
