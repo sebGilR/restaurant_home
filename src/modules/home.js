@@ -20,9 +20,7 @@ const loadHome = () => {
   mainLine.textContent = 'Beer - Coffee - Snacks';
   smallText.innerText = 'Get the best experience at Buggie Snacks';
   cta.innerText = 'View our Menu';
-  elements.appendChild(smallText);
-  elements.appendChild(mainLine);
-  elements.appendChild(cta);
+  elements.append(smallText, mainLine, cta);
 
   content.appendChild(elements);
 };
