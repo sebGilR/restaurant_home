@@ -1,0 +1,33 @@
+{
+  "name": "restaurant_home",
+  "version": "1.0.0",
+  "description": "Restaurant home page",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebGilR/restaurant_home.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebGilR/restaurant_home/issues"
+  },
+  "homepage": "https://github.com/sebGilR/restaurant_home#readme",
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.7",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {}
+}
