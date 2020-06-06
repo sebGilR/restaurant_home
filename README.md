@@ -25,7 +25,7 @@ This is a single page restaurant website that was built to practice the use of w
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/dannisonarias/Javascript_Tic_Tac_Toe/issues).
+Feel free to check the [issues page](https://github.com/sebGilR/restaurant_home/issues).
 
 ## Show your support
 
