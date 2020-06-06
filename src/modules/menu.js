@@ -36,30 +36,18 @@ const loadMenu = () => {
   const coffeeItems = ['Americano', 'Latte', 'Mocha', 'Cappuccino', 'Cold Brew Coffee'];
   const snackItems = ['Waffle Fries', 'Chicken Nuggets', 'Cheese Burger', 'Tacos'];
 
-  beerItems.map(item => {
+  const buildMenuItem = (menu, item) => {
     const li = document.createElement('LI');
     li.innerText = item;
-    beer.appendChild(li);
+    menu.appendChild(li);
     return true;
-  });
-  coffeeItems.map(item => {
-    const li = document.createElement('LI');
-    li.innerText = item;
-    coffee.appendChild(li);
-    return true;
-  });
-  snackItems.map(item => {
-    const li = document.createElement('LI');
-    li.innerText = item;
-    snacks.appendChild(li);
-    return true;
-  });
+  };
 
-  menuLists.map(list => {
-    elements.appendChild(list);
-    return true;
-  });
+  beerItems.map(item => buildMenuItem(beer, item));
+  coffeeItems.map(item => buildMenuItem(coffee, item));
+  snackItems.map(item => buildMenuItem(snacks, item));
 
+  elements.append(...menuLists);
   content.appendChild(elements);
 };
 
